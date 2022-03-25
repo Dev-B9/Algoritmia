@@ -1,0 +1,79 @@
+header{
+    text-align: center;
+}
+
+
+.contenedor-ej1{
+    color: rgb(0, 0, 0);
+    width: 300px;
+    height:30px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 5%;
+    background-color:  rgba(255, 255, 255, 0.678);;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-size: 150%;
+}
+
+.contenedor-ej2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    height:30px;
+    padding: 20px;
+    margin-left: 5%;
+    background-color:  rgba(255, 255, 255, 0.678);;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-size: 150%;
+}
+
+.contenedor-ej3{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    height:30px;
+    padding: 20px;
+    margin-left: 5%;
+    background-color:  rgba(255, 255, 255, 0.678);;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-size: 150%;
+}
+
+.contenedor-ej4{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    height:30px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 20%;
+    background-color:  rgba(255, 255, 255, 0.678);;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-size: 150%;
+}
+
+.contenedor-ej5{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    height:30px;
+    padding: 20px;
+    margin-left: 5%;
+    background-color:  rgba(255, 255, 255, 0.678);;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-size: 150%;
+}
+
+section{
+    border: 1px;
+    display: inline-block;
+    width: auto;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: justify;
+}
