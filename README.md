@@ -1,16 +1,15 @@
-# 🚀 PuntoRed Backend – Niveles 0 a 4 (NestJS + TypeScript)
+# 🚀 PuntoRed Backend – Niveles 0 a 3 (NestJS + TypeScript)
 
-Este proyecto es un backend de prueba técnica para la gestión de **recargas móviles** con JWT y SQLite. Está implementado con **NestJS** y **TypeScript**, siguiendo una evolución documentada desde autenticación básica hasta una arquitectura modular inspirada en **DDD (Domain-Driven Design) pragmático**.
+Este proyecto es un **MVP (Producto Mínimo Viable)** funcional de un backend para la gestión de **recargas móviles** con JWT y SQLite. Está desarrollado con **NestJS** y **TypeScript**, implementando una arquitectura de **DDD (Domain-Driven Design) pragmático** que evoluciona desde una autenticación básica hasta un sistema modular y escalable.
 
-El proyecto es la base de un portal transaccional que a futuro integrará pagos de servicios, compra de pines y transferencias bancarias.
-
+El proyecto sirve como base sólida para un portal transaccional integral que permitirá la expansión futura hacia pagos de servicios, compra de pines y transferencias bancarias.
 ---
 
 ## 📋 Requisitos Previos
 
 * **Node.js**: >= 18 
 * **npm**: >= 9 
-* **SQLite**: Opcional, para persistencia de datos
+* **SQLite**: no requiere instalación externa; usado vía TypeORM.
 * **IDE recomendado**: VSCode 
 
 ---
@@ -79,7 +78,7 @@ El proyecto es la base de un portal transaccional que a futuro integrará pagos 
     * Mocks de servicios y guards para simular fallos
     * Tests como documentación viva de casos de uso
 
-### 🔹 Nivel 4: Arquitectura Avanzada (Pragmatic DDD)
+### 🔹 Arquitectura avanzada – DDD pragmático (MVP)
 Organización modular basada en dominios:
 
 ```text
@@ -114,14 +113,18 @@ test/
 └─ jest-e2e.json
 
 ``` 
+#### ⚙️ Decisiones Técnicas 
+* **Enfoque Pragmático**: No se fuerza un DDD puro; la estructura sigue principios estratégicos pero es flexible, ya que muchas entidades actuales son simples y no requieren lógica de dominio compleja.
+* **Escalabilidad**: El sistema está diseñado para evolucionar de forma ordenada al agregar lógica de negocio densa, persistencia avanzada o sistemas de eventos.
+* **Servicios Limpios y SRP**: Aplicación estricta del Principio de Responsabilidad Única y separación clara de responsabilidades en cada capa.
+* **Dominio Reutilizable**: Carpeta `domain/` preparada para contener la lógica de negocio central y ser fácilmente reusable.
+* **Capa de Infraestructura**: Separación del directorio `infra/` para gestionar helpers de base de datos, logs y el bus de eventos de forma aislada.
+* **Calidad de Código**: Estrategia de tests e2e totalmente independientes de los unitarios, garantizando claridad en el mantenimiento y la validación del flujo.
 
-* **Decisiones Técnicas**:
-    * **No se fuerza DDD puro**: Ideal para entidades simples sin lógica compleja.
-    * Estructura escalable para futura lógica de dominio o eventos.
-    * Clara separación entre infraestructura y servicios limpios.
 
 ---
 
 ## 📝 Notas Finales
 * Preparado para escalabilidad y tests automatizados.
 * Seguridad implementada mediante JWT, validación DTO y guards.
+* Este backend se considera un **MVP funcional** de un portal transaccional, estructurado para evolucionar hacia un sistema de gran escala sin necesidad de refactorizaciones profundas.
