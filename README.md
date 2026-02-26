@@ -3,6 +3,7 @@
 Este proyecto es un **MVP (Producto Mínimo Viable)** funcional de un backend para la gestión de **recargas móviles** con JWT y SQLite. Está desarrollado con **NestJS** y **TypeScript**, implementando una arquitectura de **DDD (Domain-Driven Design) pragmático** que evoluciona desde una autenticación básica hasta un sistema modular y escalable.
 
 El proyecto sirve como base sólida para un portal transaccional integral que permitirá la expansión futura hacia pagos de servicios, compra de pines y transferencias bancarias.
+
 ---
 
 ## 📋 Requisitos Previos
